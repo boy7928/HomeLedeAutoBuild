@@ -20,7 +20,7 @@ on:
         default: 'true'
 
 env:
-  REPO_URL: https://github.com/boy7928/HomeLede
+  REPO_URL: https://github.com/boy7928/HomeLede.git
   REPO_BRANCH: k5
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
