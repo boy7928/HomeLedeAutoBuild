@@ -5,7 +5,7 @@ src-git telephony https://github.com/xiaoqingfengATGH/k5-feeds-telephony
 src-git lienol https://github.com/homelede/openwrt-package.git
 src-git pw https://github.com/boy7928/openwrt-passwall.git
 src-git jerrykuku https://github.com/boy7928/jerrykuku.git
-src-git xiaoqingfeng https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng
+src-git xiaoqingfeng https://github.com/boy7928/feeds-xiaoqingfeng
 #src-git video https://github.com/openwrt/video.git
 #src-git targets https://github.com/openwrt/targets.git
 #src-git oldpackages http://git.openwrt.org/packages.git
