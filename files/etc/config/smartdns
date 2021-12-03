@@ -1,0 +1,93 @@
+
+config smartdns
+	option enabled '1'
+	option server_name 'HomeLedeDNS'
+	option port '6053'
+	option prefetch_domain '1'
+	option server_group 'mainland'
+	option seconddns_port '7053'
+	option seconddns_no_rule_addr '0'
+	option seconddns_no_rule_nameserver '0'
+	option seconddns_no_rule_ipset '0'
+	option coredump '0'
+	option seconddns_server_group 'overseas'
+	option seconddns_no_dualstack_selection '1'
+	option redirect 'none'
+	option tcp_server '0'
+	option serve_expired '1'
+	option rr_ttl '3600'
+	option rr_ttl_min '2400'
+	option rr_ttl_max '86400'
+	option seconddns_tcp_server '0'
+	option force_aaaa_soa '1'
+	option seconddns_enabled '1'
+	option seconddns_no_speed_check '1'
+	option seconddns_no_cache '1'
+	option seconddns_no_rule_soa '0'
+	option ipv6_server '1'
+	option dualstack_ip_selection '0'
+	option cache_size '3000'
+	list old_redirect 'none'
+	list old_port '6053'
+	list old_enabled '1'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option name 'ALI#1#IPV6'
+	option ip '2400:3200::1'
+
+config server
+	option type 'udp'
+	option name 'CN-ALI #1'
+	option ip '223.5.5.5'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option enabled '1'
+
+config server
+	option type 'udp'
+	option name 'CN-114DNS #1'
+	option ip '114.114.114.114'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option enabled '1'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option name 'local#ipv6'
+	option ip '240e:46:4088::4088'
+
+config server
+	option name 'OS-Google DNS #1 TLS'
+	option port '853'
+	option type 'tls'
+	option server_group 'overseas'
+	option blacklist_ip '0'
+	option ip '8.8.8.8'
+	option addition_arg '-exclude-default-group'
+	option enabled '1'
+
+config server
+	option server_group 'overseas'
+	option blacklist_ip '0'
+	option addition_arg '-exclude-default-group'
+	option name '1.1.1.1'
+	option ip '1.1.1.1'
+	option type 'udp'
+	option enabled '1'
+
+config server
+	option type 'udp'
+	option name 'OS-Google DNS#2'
+	option ip '8.8.8.8'
+	option blacklist_ip '0'
+	option server_group 'overseas'
+	option addition_arg '-exclude-default-group'
+	option enabled '1'
+
