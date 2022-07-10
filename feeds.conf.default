@@ -1,5 +1,5 @@
-src-git packages https://github.com/xiaoqingfengATGH/feeds-packages
-src-git luci https://github.com/xiaoqingfengATGH/feeds-luci
+src-git packages https://github.com/boy7928/feeds-packages
+src-git luci https://github.com/boy7928/feeds-luci
 src-git routing https://github.com/xiaoqingfengATGH/k5-feeds-routing
 src-git telephony https://github.com/xiaoqingfengATGH/k5-feeds-telephony
 src-git lienol https://github.com/homelede/openwrt-package.git
