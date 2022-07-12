@@ -16,3 +16,4 @@ src-git homeclash https://github.com/xiaoqingfengATGH/homeclash.git
 # strongswanInDocker
 src-git strongswanInDocker https://github.com/xiaoqingfengATGH/luci-app-strongswanInDocker.git
 #src-link custom /usr/src/openwrt/custom-feed
+src-git netspeedtest  https://github.com/sirpdboy/netspeedtest
