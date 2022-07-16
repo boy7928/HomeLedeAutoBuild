@@ -17,26 +17,3 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # Add HomeLede prepareCompile.sh
 
-
-function disableDulicatedPkg()
-{
-	if [ -d $1 ];then
-		rm -rf $1
-		echo $1" Disabled."
-	fi
-}
-
-./scripts/feeds update -a
-
-for disablePkg in $disablePkgsList
-do
-	disableDulicatedPkg $disablePkg
-done
-
-./scripts/feeds update -i
-./scripts/feeds install -a
-
-if [ ! -f .config ];then
-cp defconfig .config
-echo "Default .config created."
-fi
