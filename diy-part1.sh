@@ -16,36 +16,7 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # Add HomeLede prepareCompile.sh
-disablePkgsList="
-./feeds/lienol/luci-app-guest-wifi 
-./feeds/lienol/luci-app-pppoe-relay 
-./feeds/lienol/luci-app-pptp-server 
-./feeds/lienol/luci-app-ramfree 
-./feeds/lienol/luci-app-verysync 
-./feeds/lienol/verysync 
-./feeds/luci/applications/luci-app-sqm 
-./feeds/packages/net/adguardhome 
-./feeds/packages/net/dnscrypt-proxy2 
-./feeds/packages/net/https-dns-proxy 
-./feeds/packages/net/kcptun 
-./feeds/packages/net/miniupnpd 
-./feeds/packages/net/mwan3 
-./feeds/packages/net/smartdns 
-./feeds/packages/net/xtables-addons 
-./feeds/packages/utils/containerd 
-./feeds/packages/utils/docker 
-./feeds/packages/utils/docker-compose 
-./feeds/packages/utils/dockerd 
-./feeds/packages/utils/libnetwork 
-./feeds/packages/utils/runc 
-./feeds/packages/utils/tini 
-./feeds/pw/chinadns-ng 
-./feeds/pw/dns2socks/ 
-./feeds/pw/ipt2socks/ 
-./feeds/pw/microsocks/ 
-./feeds/pw/pdnsd-alt/ 
-./feeds/xiaoqingfeng/softethervpn5
-"
+
 
 function disableDulicatedPkg()
 {
